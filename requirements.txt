@@ -5,3 +5,4 @@ langchain==0.0.300
 openai==0.27.8
 chromadb==0.4.4
 PyPDF2
+python-dotenv
