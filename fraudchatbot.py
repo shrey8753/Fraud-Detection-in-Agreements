@@ -8,9 +8,14 @@ from langchain.chat_models import ChatOpenAI
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
 from langchain.embeddings.openai import OpenAIEmbeddings
+from dotenv import load_dotenv
 
-# Initialize the OpenAI API key
-openai_api_key = 'sk-proj-M0emkqSWERQgvIFQAVepT3BlbkFJ7sNWEkyzrrcdSB66zQSO'
+
+load_dotenv()
+
+
+
+openai_api_key = os.getenv("openai_api_key")
 
 # Streamlit app layout with customizations
 
